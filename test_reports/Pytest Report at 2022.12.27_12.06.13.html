@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Pytest Report at 2022.12.26_20.41.22.html</title>
+    <title>Pytest Report at 2022.12.27_12.06.13.html</title>
     <style>body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -482,8 +482,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
     notFoundMessage.hidden = !allRowsHidden;
 }
 </script>
-    <h1>Pytest Report at 2022.12.26_20.41.22.html</h1>
-    <p>Report generated on 26-Dec-2022 at 20:41:23 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <h1>Pytest Report at 2022.12.27_12.06.13.html</h1>
+    <p>Report generated on 27-Dec-2022 at 12:06:14 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -499,8 +499,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.4</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 0.20 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>10 tests ran in 0.47 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">9 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">1 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -511,10 +511,28 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="xfailed results-table-row">
+        <tr>
+          <td class="col-result">XFailed</td>
+          <td class="col-name">test_sentiment.py::test_long_negative</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">cls = &lt;class &#x27;_pytest.runner.CallInfo&#x27;&gt;, func = &lt;function call_runtest_hook.&lt;locals&gt;.&lt;lambda&gt; at 0x000001A7A30F2710&gt;, when = &#x27;setup&#x27;<br/>reraise = (&lt;class &#x27;_pytest.outcomes.Exit&#x27;&gt;, &lt;class &#x27;KeyboardInterrupt&#x27;&gt;)<br/><br/>    @classmethod<br/>    def from_call(<br/>        cls,<br/>        func: &quot;Callable[[], TResult]&quot;,<br/>        when: &quot;Literal[&#x27;collect&#x27;, &#x27;setup&#x27;, &#x27;call&#x27;, &#x27;teardown&#x27;]&quot;,<br/>        reraise: Optional[<br/>            Union[Type[BaseException], Tuple[Type[BaseException], ...]]<br/>        ] = None,<br/>    ) -&gt; &quot;CallInfo[TResult]&quot;:<br/>        &quot;&quot;&quot;Call func, wrapping the result in a CallInfo.<br/>    <br/>        :param func:<br/>            The function to call. Called without arguments.<br/>        :param when:<br/>            The phase in which the function is called.<br/>        :param reraise:<br/>            Exception or exceptions that shall propagate if raised by the<br/>            function, instead of being wrapped in the CallInfo.<br/>        &quot;&quot;&quot;<br/>        excinfo = None<br/>        start = timing.time()<br/>        precise_start = timing.perf_counter()<br/>        try:<br/>&gt;           result: Optional[TResult] = func()<br/><br/>venv\lib\site-packages\_pytest\runner.py:339: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>venv\lib\site-packages\_pytest\runner.py:260: in &lt;lambda&gt;<br/>    lambda: ihook(item=item, **kwds), when=when, reraise=reraise<br/>venv\lib\site-packages\pluggy\_hooks.py:265: in __call__<br/>    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)<br/>venv\lib\site-packages\pluggy\_manager.py:80: in _hookexec<br/>    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>item = &lt;Function test_long_negative&gt;<br/><br/>    @hookimpl(tryfirst=True)<br/>    def pytest_runtest_setup(item: Item) -&gt; None:<br/>        skipped = evaluate_skip_marks(item)<br/>        if skipped:<br/>            raise skip.Exception(skipped.reason, _use_item_location=True)<br/>    <br/>        item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)<br/>        if xfailed and not item.config.option.runxfail and not xfailed.run:<br/>&gt;           xfail(&quot;[NOTRUN] &quot; + xfailed.reason)<br/><span class="error">E           _pytest.outcomes.XFailed: [NOTRUN] Response should be negative</span><br/><br/>venv\lib\site-packages\_pytest\skipping.py:242: XFailed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_sentiment.py::test_run_server</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_sentiment.py::test_no_run_server</td>
           <td class="col-duration">0.01</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -533,6 +551,51 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_sentiment.py::test_get_response_NoArgs</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_sentiment.py::test_get_positive</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_sentiment.py::test_get_negative</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_sentiment.py::test_medium_positive</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_sentiment.py::test_medium_negative</td>
+          <td class="col-duration">0.02</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_sentiment.py::test_long_positive</td>
           <td class="col-duration">0.01</td>
           <td class="col-links"></td></tr>
         <tr>

@@ -8,7 +8,7 @@ def simple_response(text):
     return new_text
 
 
-text = "I lovepython, I lovepython, I lovepython, I lovepython"
+text = "I love python"
 
 url = "http://127.0.0.1:5000?q={}".format(text)
 
