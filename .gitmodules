@@ -1,0 +1,3 @@
+[submodule "Sentiment-Analysis-Flask-API"]
+	path = Sentiment-Analysis-Flask-API
+	url = https://github.com/msindev/Sentiment-Analysis-Flask-API.git
