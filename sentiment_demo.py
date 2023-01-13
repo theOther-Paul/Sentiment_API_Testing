@@ -6,7 +6,8 @@ url = "http://127.0.0.1:5000?q={}".format(text)
 
 response = requests.request("GET", url, data=text)
 
-print(response.text)
+text_response = response.json()
+print (text_response['sentiment'])
 
 """
 To be implemented:
